@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration threshold="all" debug="false">
+
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<param name="Threshold" value="ALL" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="  %d [%5p] %c:%L - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="STDERR" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.err" />
+		<param name="Threshold" value="ERROR" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="  %d %-6p [%t] %c{1} M[%M] - %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="file" class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="false" />
+		<param name="maxFileSize" value="100MB" />
+		<param name="maxBackupIndex" value="5" />
+		<param name="file" value="log.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
+		</layout>
+	</appender>
+
+	<logger name="PMExperiment" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="STDERR" />
+	</logger>
+
+	<!-- root logger -->
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="file" />
+	</root>
+
+</log4j:configuration>

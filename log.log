@@ -1,0 +1,5 @@
+2017-05-14 23:14:58 INFO  ReceiveEmail:17 - Start email receive service
+2017-05-14 23:14:58 INFO  ReceiveEmail:32 - build session obj
+2017-05-14 23:14:58 INFO  ReceiveEmail:36 - connect with pop3.web.de
+2017-05-14 23:15:00 INFO  ReceiveEmail:38 - true
+2017-05-14 23:15:00 INFO  ReceiveEmail:46 - email in inbox 3
