@@ -1,5 +1,15 @@
-2017-05-14 23:14:58 INFO  ReceiveEmail:17 - Start email receive service
-2017-05-14 23:14:58 INFO  ReceiveEmail:32 - build session obj
-2017-05-14 23:14:58 INFO  ReceiveEmail:36 - connect with pop3.web.de
-2017-05-14 23:15:00 INFO  ReceiveEmail:38 - true
-2017-05-14 23:15:00 INFO  ReceiveEmail:46 - email in inbox 3
+2017-05-15 22:51:58 INFO  PropertiesReader:16 - load email configuration data
+2017-05-15 22:51:58 INFO  Receiver:20 - get emails from pop3.web.de
+2017-05-15 22:51:58 INFO  Receiver:23 - connetct to pop3.web.de
+2017-05-15 22:52:00 INFO  Receiver:26 - is connected = true
+2017-05-15 22:52:00 INFO  Receiver:32 - email in inbox 3
+2017-05-15 22:52:00 INFO  Core:31 - 	Printing individual messages
+2017-05-15 22:52:00 INFO  Core:32 - 	No# 1
+2017-05-15 22:52:00 ERROR Core:39 - error in displaying emails
+java.lang.IllegalStateException: Folder is not Open
+	at com.sun.mail.pop3.POP3Folder.checkOpen(POP3Folder.java:551)
+	at com.sun.mail.pop3.POP3Folder.getProtocol(POP3Folder.java:581)
+	at com.sun.mail.pop3.POP3Message.loadHeaders(POP3Message.java:606)
+	at com.sun.mail.pop3.POP3Message.getHeader(POP3Message.java:383)
+	at javax.mail.internet.MimeMessage.getSubject(MimeMessage.java:776)
+	at com.wdz.Core.main(Core.java:33)
