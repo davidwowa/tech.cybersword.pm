@@ -29,7 +29,7 @@ public class Sender {
 			// !!!
 
 			message.setSubject("Email " + email.getUuid());
-			message.setText("----////\\\\----\n" + email.getUuid());
+			message.setText("->" + email.getUuid());
 			logger.info("change headers");
 			// !!!
 			message.setHeader("Received", "haha");
