@@ -1,28 +1,87 @@
-2017-05-17 01:07:23 INFO  Core:24 - read properties
-2017-05-17 01:07:23 INFO  PropertiesReader:16 - load email configuration data
-2017-05-17 01:07:23 INFO  PropertiesReader:16 - load email configuration data
-2017-05-17 01:07:23 INFO  Core:28 - create sender and receiver objects
-2017-05-17 01:07:23 INFO  Core:32 - create email/s
-2017-05-17 01:07:23 INFO  Core:37 - send email/s
-2017-05-17 01:07:23 INFO  Sender:23 - build new email for sending a0dca316-b716-47ab-b9c8-5f747467eb8e
-2017-05-17 01:07:23 INFO  Sender:33 - change headers
-2017-05-17 01:07:23 INFO  Sender:40 - connect to sender host
-2017-05-17 01:07:38 INFO  Sender:43 - send email a0dca316-b716-47ab-b9c8-5f747467eb8e
-2017-05-17 01:07:38 INFO  Sender:45 - Response: 250 OK id=1dAlZ4-4XaBOu-Fa
+2017-05-17 02:54:15 INFO  Core:25 - read properties
+2017-05-17 02:54:15 INFO  PropertiesReader:16 - load email configuration data
+2017-05-17 02:54:15 INFO  PropertiesReader:16 - load email configuration data
+2017-05-17 02:54:15 INFO  Core:29 - create sender and receiver objects
+2017-05-17 02:54:15 INFO  Core:34 - create email/s
+2017-05-17 02:54:15 INFO  Logger:15 - generate 7 emails
+2017-05-17 02:54:15 INFO  Core:37 - send email/s
+2017-05-17 02:54:15 INFO  Sender:23 - build new email for sending 8b1f04b5-a859-4c3d-b6a8-dda7d8a81d60
+2017-05-17 02:54:15 INFO  Sender:33 - change headers
+2017-05-17 02:54:15 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:17 INFO  Sender:43 - send email 8b1f04b5-a859-4c3d-b6a8-dda7d8a81d60
+2017-05-17 02:54:18 INFO  Sender:45 - Response: 250 OK id=1dAnEI-9EFMvd-7e
 
-2017-05-17 01:07:38 INFO  Core:40 - save sended email in db
-2017-05-17 01:07:38 INFO  Core:43 - wait
-2017-05-17 01:07:38 INFO  Core:45 - load emails
-2017-05-17 01:07:38 INFO  Receiver:23 - get emails from pop3.web.de
-2017-05-17 01:07:38 INFO  Receiver:26 - connetct to pop3.web.de
-2017-05-17 01:07:38 INFO  Receiver:29 - is connected = true
-2017-05-17 01:07:39 INFO  Receiver:35 - emails in inbox 2
-2017-05-17 01:07:39 INFO  Receiver:56 - 	Individual email
-2017-05-17 01:07:39 INFO  Receiver:57 - 	No# 1
-2017-05-17 01:07:39 INFO  Receiver:58 - 	Email Subject: Email null
-2017-05-17 01:07:39 INFO  Receiver:59 - 	Sender: bankX@bankX.de
-2017-05-17 01:07:39 INFO  Receiver:56 - 	Individual email
-2017-05-17 01:07:39 INFO  Receiver:57 - 	No# 2
-2017-05-17 01:07:39 INFO  Receiver:58 - 	Email Subject: Email b1fd843f-eb42-4488-be80-e27a56416863
-2017-05-17 01:07:39 INFO  Receiver:59 - 	Sender: bankX@bankX.de
-2017-05-17 01:10:50 INFO  Core:48 - save loaded emails in db
+2017-05-17 02:54:18 INFO  Sender:23 - build new email for sending 1601c041-223d-49b9-b2db-e7f2c440745d
+2017-05-17 02:54:18 INFO  Sender:33 - change headers
+2017-05-17 02:54:18 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:18 INFO  Sender:43 - send email 1601c041-223d-49b9-b2db-e7f2c440745d
+2017-05-17 02:54:19 INFO  Sender:45 - Response: 250 OK id=1dAnEJ-9EFMvr-1U
+
+2017-05-17 02:54:19 INFO  Sender:23 - build new email for sending 46bf744f-b00b-4ca6-a89a-cfab9a74a632
+2017-05-17 02:54:19 INFO  Sender:33 - change headers
+2017-05-17 02:54:19 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:19 INFO  Sender:43 - send email 46bf744f-b00b-4ca6-a89a-cfab9a74a632
+2017-05-17 02:54:20 INFO  Sender:45 - Response: 250 OK id=1dAnEK-9EFMw2-3u
+
+2017-05-17 02:54:20 INFO  Sender:23 - build new email for sending 47a0cdc6-4c87-4651-83f2-afadb4fdb9e0
+2017-05-17 02:54:20 INFO  Sender:33 - change headers
+2017-05-17 02:54:20 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:21 INFO  Sender:43 - send email 47a0cdc6-4c87-4651-83f2-afadb4fdb9e0
+2017-05-17 02:54:21 INFO  Sender:45 - Response: 250 OK id=1dAnEL-9EFMwF-HM
+
+2017-05-17 02:54:21 INFO  Sender:23 - build new email for sending f16ba7cf-0f97-446e-87d3-8e3576f4a921
+2017-05-17 02:54:21 INFO  Sender:33 - change headers
+2017-05-17 02:54:21 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:23 INFO  Sender:43 - send email f16ba7cf-0f97-446e-87d3-8e3576f4a921
+2017-05-17 02:54:23 INFO  Sender:45 - Response: 250 OK id=1dAnEN-9EFMwR-Ar
+
+2017-05-17 02:54:23 INFO  Sender:23 - build new email for sending b48df47f-0b3a-4e9c-8e9e-457c2f03c63a
+2017-05-17 02:54:23 INFO  Sender:33 - change headers
+2017-05-17 02:54:23 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:23 INFO  Sender:43 - send email b48df47f-0b3a-4e9c-8e9e-457c2f03c63a
+2017-05-17 02:54:24 INFO  Sender:45 - Response: 250 OK id=1dAnEO-9EFMxG-1v
+
+2017-05-17 02:54:24 INFO  Sender:23 - build new email for sending af8038fd-e006-489c-a9ab-508c5be44e5c
+2017-05-17 02:54:24 INFO  Sender:33 - change headers
+2017-05-17 02:54:24 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:24 INFO  Sender:43 - send email af8038fd-e006-489c-a9ab-508c5be44e5c
+2017-05-17 02:54:24 INFO  Sender:45 - Response: 250 OK id=1dAnEO-9EFMxX-MR
+
+2017-05-17 02:54:24 INFO  Sender:23 - build new email for sending 8578324b-94d4-4adb-8684-88999c354c95
+2017-05-17 02:54:24 INFO  Sender:33 - change headers
+2017-05-17 02:54:24 INFO  Sender:40 - connect to sender host
+2017-05-17 02:54:25 INFO  Sender:43 - send email 8578324b-94d4-4adb-8684-88999c354c95
+2017-05-17 02:54:25 INFO  Sender:45 - Response: 250 OK id=1dAnEP-9EFMxh-8o
+
+2017-05-17 02:54:25 INFO  Core:42 - save sended email in db
+2017-05-17 02:54:25 INFO  Core:45 - wait
+2017-05-17 02:54:25 INFO  Core:47 - load emails
+2017-05-17 02:54:25 INFO  Receiver:23 - get emails from pop3.web.de
+2017-05-17 02:54:25 INFO  Receiver:26 - connetct to pop3.web.de
+2017-05-17 02:54:25 INFO  Receiver:29 - is connected = true
+2017-05-17 02:54:25 INFO  Receiver:35 - emails in inbox 6
+2017-05-17 02:54:25 INFO  Receiver:56 - 	Individual email
+2017-05-17 02:54:25 INFO  Receiver:57 - 	No# 1
+2017-05-17 02:54:25 INFO  Receiver:58 - 	Email Subject: Email null
+2017-05-17 02:54:25 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 02:54:26 INFO  Receiver:56 - 	Individual email
+2017-05-17 02:54:26 INFO  Receiver:57 - 	No# 2
+2017-05-17 02:54:26 INFO  Receiver:58 - 	Email Subject: Email b1fd843f-eb42-4488-be80-e27a56416863
+2017-05-17 02:54:26 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 02:54:26 INFO  Receiver:56 - 	Individual email
+2017-05-17 02:54:26 INFO  Receiver:57 - 	No# 3
+2017-05-17 02:54:26 INFO  Receiver:58 - 	Email Subject: WEB.DE Statusreport - Übersicht Ihrer Ordner
+2017-05-17 02:54:26 INFO  Receiver:59 - 	Sender: "WEB.DE Kundenmanagement" <keineantwortadresse@system.web.de>
+2017-05-17 02:54:26 INFO  Receiver:56 - 	Individual email
+2017-05-17 02:54:26 INFO  Receiver:57 - 	No# 4
+2017-05-17 02:54:26 INFO  Receiver:58 - 	Email Subject: Email 8b1f04b5-a859-4c3d-b6a8-dda7d8a81d60
+2017-05-17 02:54:26 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 02:54:26 INFO  Receiver:56 - 	Individual email
+2017-05-17 02:54:26 INFO  Receiver:57 - 	No# 5
+2017-05-17 02:54:26 INFO  Receiver:58 - 	Email Subject: Email 1601c041-223d-49b9-b2db-e7f2c440745d
+2017-05-17 02:54:26 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 02:54:26 INFO  Receiver:56 - 	Individual email
+2017-05-17 02:54:26 INFO  Receiver:57 - 	No# 6
+2017-05-17 02:54:26 INFO  Receiver:58 - 	Email Subject: Email 46bf744f-b00b-4ca6-a89a-cfab9a74a632
+2017-05-17 02:54:26 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 02:54:26 INFO  Core:50 - save loaded emails in db
