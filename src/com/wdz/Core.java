@@ -22,7 +22,7 @@ public class Core {
 
 		PropertiesReader propertiesReader = new PropertiesReader();
 
-		logger.info("read properties");
+		logger.info("read email properties");
 		Properties targetProperties = propertiesReader.getProperties(config_in_email);
 		Properties sourceProperties = propertiesReader.getProperties(config_out_email);
 

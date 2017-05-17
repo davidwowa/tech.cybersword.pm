@@ -1,0 +1,13 @@
+## INFO HERE ##
+# http://stackoverflow.com/questions/37694987/connecting-to-postgresql-in-a-docker-container-from-outside
+
+# get container
+docker pull postgres
+# run container and map ports
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
+# login in bash on container
+docker exec -it db5d9f2834fb bash
+# use psql
+psql -U postgres
+# create database
+CREATE DATABASE emails;

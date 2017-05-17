@@ -13,11 +13,11 @@ public class PropertiesReader {
 	public Properties getProperties(String pathToConfigFile) {
 		Properties properties = new Properties();
 		try (InputStream inputStream = new FileInputStream(pathToConfigFile)) {
-			logger.info("load email configuration data");
+			logger.info("load configuration data " + pathToConfigFile);
 			properties.load(inputStream);
 			return properties;
 		} catch (Throwable throwable) {
-			logger.error("error on loading properties for email configuration", throwable);
+			logger.error("error on loading properties configuration", throwable);
 			throwable.printStackTrace();
 		}
 		return null;
