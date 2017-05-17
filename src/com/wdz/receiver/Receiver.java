@@ -56,7 +56,9 @@ public class Receiver {
 					logger.info("\tIndividual email");
 					logger.info("\tNo# " + (i + 1));
 					logger.info("\tEmail Subject: " + curretnEmail.getSubject());
-					logger.info("\tSender: " + curretnEmail.getFrom()[0]);
+					if (curretnEmail.getFrom() != null) {
+						logger.info("\tSender: " + curretnEmail.getFrom()[0]);
+					}
 					i++;
 				}
 				return emailList;

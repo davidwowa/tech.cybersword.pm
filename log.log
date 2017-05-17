@@ -1,19 +1,100 @@
-2017-05-17 21:44:03 INFO  DBConnector:36 - read database properties
-2017-05-17 21:44:03 INFO  PropertiesReader:16 - load configuration data resources/database.properties
-2017-05-17 21:44:03 INFO  DBConnector:42 - load jdbc driver
-2017-05-17 21:44:03 INFO  DBConnector:44 - get connection
-2017-05-17 21:44:03 INFO  DBConnector:48 - create statement
-2017-05-17 21:44:03 INFO  DBConnector:50 - run version query / only postgres db
-2017-05-17 21:44:03 INFO  DBConnector:53 - host -> 			 jdbc:postgresql://localhost:5432/emails
-2017-05-17 21:44:03 INFO  DBConnector:54 - port -> 			 5432
-2017-05-17 21:44:03 INFO  DBConnector:55 - driver -> 		 org.postgresql.Driver
-2017-05-17 21:44:03 INFO  DBConnector:57 - postgresql version -> 	 PostgreSQL 9.6.3 on x86_64-pc-linux-gnu, compiled by gcc (Debian 4.9.2-10) 4.9.2, 64-bit
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 information_schema
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 sql_implementation_info
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 postgres
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 null
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 f
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 f
-2017-05-17 21:44:03 INFO  DBConnector:70 - schema information -> 	 f
-2017-05-17 21:44:03 INFO  DBConnector:76 - close connection
-2017-05-17 21:44:03 INFO  DBConnector:78 - connection closed
+2017-05-18 01:09:04 INFO  Core:29 - read email properties
+2017-05-18 01:09:04 INFO  PropertiesReader:16 - load configuration data resources/config_in_email.properties
+2017-05-18 01:09:04 INFO  PropertiesReader:16 - load configuration data resources/config_out_email.properties
+2017-05-18 01:09:04 INFO  Core:33 - create sender and receiver objects
+2017-05-18 01:09:04 INFO  Core:39 - create email/s
+2017-05-18 01:09:04 INFO  Logger:15 - generate 2 emails
+2017-05-18 01:09:04 INFO  Core:42 - send email/s
+2017-05-18 01:09:04 INFO  Sender:23 - build new email for sending 752a2fa8-fc69-465a-95c5-7717a0b0e43f
+2017-05-18 01:09:04 INFO  Sender:33 - change headers
+2017-05-18 01:09:04 INFO  Sender:40 - connect to sender host
+2017-05-18 01:09:05 INFO  Sender:43 - send email 752a2fa8-fc69-465a-95c5-7717a0b0e43f
+2017-05-18 01:09:05 INFO  Sender:45 - Response: 250 OK id=1dB841-9EFObv-8y
+
+2017-05-18 01:09:05 INFO  Sender:23 - build new email for sending f23b63db-0ebc-49b4-b555-d1e37e162a1b
+2017-05-18 01:09:05 INFO  Sender:33 - change headers
+2017-05-18 01:09:05 INFO  Sender:40 - connect to sender host
+2017-05-18 01:09:05 INFO  Sender:43 - send email f23b63db-0ebc-49b4-b555-d1e37e162a1b
+2017-05-18 01:09:06 INFO  Sender:45 - Response: 250 OK id=1dB841-9EFOc7-VR
+
+2017-05-18 01:09:06 INFO  Sender:23 - build new email for sending d0f1caee-3938-4f73-b638-2f8cade03304
+2017-05-18 01:09:06 INFO  Sender:33 - change headers
+2017-05-18 01:09:06 INFO  Sender:40 - connect to sender host
+2017-05-18 01:09:06 INFO  Sender:43 - send email d0f1caee-3938-4f73-b638-2f8cade03304
+2017-05-18 01:09:06 INFO  Sender:45 - Response: 250 OK id=1dB842-9EFOcJ-JL
+
+2017-05-18 01:09:06 INFO  DBConnector:38 - read database properties
+2017-05-18 01:09:06 INFO  PropertiesReader:16 - load configuration data resources/database.properties
+2017-05-18 01:09:06 INFO  DBConnector:44 - load jdbc driver
+2017-05-18 01:09:06 INFO  DBConnector:46 - get connection
+2017-05-18 01:09:06 INFO  DBConnector:50 - create statement
+2017-05-18 01:09:06 INFO  DBConnector:52 - run version query / only postgres db
+2017-05-18 01:09:06 INFO  DBConnector:55 - host -> 			 jdbc:postgresql://localhost:5432/emails
+2017-05-18 01:09:06 INFO  DBConnector:56 - port -> 			 5432
+2017-05-18 01:09:06 INFO  DBConnector:57 - driver -> 		 org.postgresql.Driver
+2017-05-18 01:09:06 INFO  DBConnector:59 - postgresql version -> 	 PostgreSQL 9.6.3 on x86_64-pc-linux-gnu, compiled by gcc (Debian 4.9.2-10) 4.9.2, 64-bit
+2017-05-18 01:09:06 INFO  DBConnector:81 - drop table emails
+2017-05-18 01:09:06 INFO  DBConnector:86 - create table emails
+2017-05-18 01:09:06 INFO  DBConnector:106 - table emails created
+2017-05-18 01:09:06 INFO  DBConnector:111 - close connection
+2017-05-18 01:09:06 INFO  DBConnector:113 - connection closed
+2017-05-18 01:09:06 INFO  EmailConverter:27 - create instance of email converter
+2017-05-18 01:09:06 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:06 WARN  EmailConverter:70 - from addresses are null or empty!!!
+2017-05-18 01:09:06 ERROR EmailConverter:54 - email headers are null
+2017-05-18 01:09:06 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:06 WARN  EmailConverter:70 - from addresses are null or empty!!!
+2017-05-18 01:09:06 ERROR EmailConverter:54 - email headers are null
+2017-05-18 01:09:06 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:06 WARN  EmailConverter:70 - from addresses are null or empty!!!
+2017-05-18 01:09:06 ERROR EmailConverter:54 - email headers are null
+2017-05-18 01:09:06 INFO  DBConnector:126 - save emails
+2017-05-18 01:09:06 INFO  DBConnector:131 - save email with uuid 752a2fa8-fc69-465a-95c5-7717a0b0e43f
+2017-05-18 01:09:06 INFO  DBConnector:131 - save email with uuid f23b63db-0ebc-49b4-b555-d1e37e162a1b
+2017-05-18 01:09:06 INFO  DBConnector:131 - save email with uuid d0f1caee-3938-4f73-b638-2f8cade03304
+2017-05-18 01:09:06 INFO  DBConnector:175 - emails are in database
+2017-05-18 01:09:06 INFO  Core:58 - wait
+2017-05-18 01:09:06 INFO  Core:60 - receive emails
+2017-05-18 01:09:06 INFO  Receiver:23 - get emails from pop3.web.de
+2017-05-18 01:09:06 INFO  Receiver:26 - connetct to pop3.web.de
+2017-05-18 01:09:07 INFO  Receiver:29 - is connected = true
+2017-05-18 01:09:07 INFO  Receiver:35 - emails in inbox 6
+2017-05-18 01:09:07 INFO  Receiver:56 - 	Individual email
+2017-05-18 01:09:07 INFO  Receiver:57 - 	No# 1
+2017-05-18 01:09:07 INFO  Receiver:58 - 	Email Subject: Email fbc44035-3c3c-40d7-96ac-dc5f50885611
+2017-05-18 01:09:07 INFO  Receiver:60 - 	Sender: bankX@bankX.de
+2017-05-18 01:09:07 INFO  Receiver:56 - 	Individual email
+2017-05-18 01:09:07 INFO  Receiver:57 - 	No# 2
+2017-05-18 01:09:07 INFO  Receiver:58 - 	Email Subject: Email 99a08cd3-16fb-482d-823f-82d41f6fcb00
+2017-05-18 01:09:07 INFO  Receiver:60 - 	Sender: bankX@bankX.de
+2017-05-18 01:09:07 INFO  Receiver:56 - 	Individual email
+2017-05-18 01:09:07 INFO  Receiver:57 - 	No# 3
+2017-05-18 01:09:07 INFO  Receiver:58 - 	Email Subject: Email 41aa75f1-0a88-4246-a2af-ecff747945f1
+2017-05-18 01:09:07 INFO  Receiver:60 - 	Sender: bankX@bankX.de
+2017-05-18 01:09:07 INFO  Receiver:56 - 	Individual email
+2017-05-18 01:09:07 INFO  Receiver:57 - 	No# 4
+2017-05-18 01:09:07 INFO  Receiver:58 - 	Email Subject: Email ce93c52a-afd5-45ac-b349-3a7ce6093e19
+2017-05-18 01:09:07 INFO  Receiver:60 - 	Sender: bankX@bankX.de
+2017-05-18 01:09:07 INFO  Receiver:56 - 	Individual email
+2017-05-18 01:09:07 INFO  Receiver:57 - 	No# 5
+2017-05-18 01:09:07 INFO  Receiver:58 - 	Email Subject: Email f3599e2f-8c5d-4855-a4f7-e88ac779663d
+2017-05-18 01:09:07 INFO  Receiver:60 - 	Sender: bankX@bankX.de
+2017-05-18 01:09:08 INFO  Receiver:56 - 	Individual email
+2017-05-18 01:09:08 INFO  Receiver:57 - 	No# 6
+2017-05-18 01:09:08 INFO  Receiver:58 - 	Email Subject: Email daa174d4-7fa4-4020-bab4-7e554e2278d7
+2017-05-18 01:09:08 INFO  Receiver:60 - 	Sender: bankX@bankX.de
+2017-05-18 01:09:08 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:08 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:08 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:08 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:08 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:08 WARN  EmailConverter:40 - receive date is null
+2017-05-18 01:09:08 INFO  Core:68 - save loaded emails in db
+2017-05-18 01:09:08 INFO  DBConnector:126 - save emails
+2017-05-18 01:09:08 INFO  DBConnector:131 - save email with uuid ec096c93-dc55-4e8c-8844-6cf5d0c35bf9
+2017-05-18 01:09:08 INFO  DBConnector:131 - save email with uuid b8102aca-3d35-42ca-a264-e85b39343927
+2017-05-18 01:09:08 INFO  DBConnector:131 - save email with uuid 33c44584-1c63-499d-b078-8acc1b78c797
+2017-05-18 01:09:08 INFO  DBConnector:131 - save email with uuid a1a34b43-49f1-4fc0-8979-cd78b6f1d749
+2017-05-18 01:09:08 INFO  DBConnector:131 - save email with uuid 582dc6cd-2813-4355-9904-2816b2f70c86
+2017-05-18 01:09:08 INFO  DBConnector:131 - save email with uuid 49cb9667-57f5-4989-b4a2-9135df8f5cd8
+2017-05-18 01:09:08 INFO  DBConnector:175 - emails are in database
