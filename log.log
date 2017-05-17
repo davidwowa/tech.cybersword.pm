@@ -1,15 +1,28 @@
-2017-05-15 22:51:58 INFO  PropertiesReader:16 - load email configuration data
-2017-05-15 22:51:58 INFO  Receiver:20 - get emails from pop3.web.de
-2017-05-15 22:51:58 INFO  Receiver:23 - connetct to pop3.web.de
-2017-05-15 22:52:00 INFO  Receiver:26 - is connected = true
-2017-05-15 22:52:00 INFO  Receiver:32 - email in inbox 3
-2017-05-15 22:52:00 INFO  Core:31 - 	Printing individual messages
-2017-05-15 22:52:00 INFO  Core:32 - 	No# 1
-2017-05-15 22:52:00 ERROR Core:39 - error in displaying emails
-java.lang.IllegalStateException: Folder is not Open
-	at com.sun.mail.pop3.POP3Folder.checkOpen(POP3Folder.java:551)
-	at com.sun.mail.pop3.POP3Folder.getProtocol(POP3Folder.java:581)
-	at com.sun.mail.pop3.POP3Message.loadHeaders(POP3Message.java:606)
-	at com.sun.mail.pop3.POP3Message.getHeader(POP3Message.java:383)
-	at javax.mail.internet.MimeMessage.getSubject(MimeMessage.java:776)
-	at com.wdz.Core.main(Core.java:33)
+2017-05-17 01:07:23 INFO  Core:24 - read properties
+2017-05-17 01:07:23 INFO  PropertiesReader:16 - load email configuration data
+2017-05-17 01:07:23 INFO  PropertiesReader:16 - load email configuration data
+2017-05-17 01:07:23 INFO  Core:28 - create sender and receiver objects
+2017-05-17 01:07:23 INFO  Core:32 - create email/s
+2017-05-17 01:07:23 INFO  Core:37 - send email/s
+2017-05-17 01:07:23 INFO  Sender:23 - build new email for sending a0dca316-b716-47ab-b9c8-5f747467eb8e
+2017-05-17 01:07:23 INFO  Sender:33 - change headers
+2017-05-17 01:07:23 INFO  Sender:40 - connect to sender host
+2017-05-17 01:07:38 INFO  Sender:43 - send email a0dca316-b716-47ab-b9c8-5f747467eb8e
+2017-05-17 01:07:38 INFO  Sender:45 - Response: 250 OK id=1dAlZ4-4XaBOu-Fa
+
+2017-05-17 01:07:38 INFO  Core:40 - save sended email in db
+2017-05-17 01:07:38 INFO  Core:43 - wait
+2017-05-17 01:07:38 INFO  Core:45 - load emails
+2017-05-17 01:07:38 INFO  Receiver:23 - get emails from pop3.web.de
+2017-05-17 01:07:38 INFO  Receiver:26 - connetct to pop3.web.de
+2017-05-17 01:07:38 INFO  Receiver:29 - is connected = true
+2017-05-17 01:07:39 INFO  Receiver:35 - emails in inbox 2
+2017-05-17 01:07:39 INFO  Receiver:56 - 	Individual email
+2017-05-17 01:07:39 INFO  Receiver:57 - 	No# 1
+2017-05-17 01:07:39 INFO  Receiver:58 - 	Email Subject: Email null
+2017-05-17 01:07:39 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 01:07:39 INFO  Receiver:56 - 	Individual email
+2017-05-17 01:07:39 INFO  Receiver:57 - 	No# 2
+2017-05-17 01:07:39 INFO  Receiver:58 - 	Email Subject: Email b1fd843f-eb42-4488-be80-e27a56416863
+2017-05-17 01:07:39 INFO  Receiver:59 - 	Sender: bankX@bankX.de
+2017-05-17 01:10:50 INFO  Core:48 - save loaded emails in db
