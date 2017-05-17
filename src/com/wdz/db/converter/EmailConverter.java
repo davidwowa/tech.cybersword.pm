@@ -33,6 +33,7 @@ public class EmailConverter {
 		mailEntity.setUuid(email.getUuid());
 		mailEntity.setTargetEmail(email.getTargetEmail());
 		mailEntity.setSourceEmail(email.getSourceEmail());
+		mailEntity.setRecipients(getAddressesAsString(email.getRecipients()));
 		mailEntity.setResponse(email.getResponse());
 		if (email.getReceivedDate() != null) {
 			mailEntity.setReceivedDate(email.getReceivedDate().toString());
@@ -43,7 +44,7 @@ public class EmailConverter {
 		mailEntity.setContent(email.getContent().toString());
 		mailEntity.setContentyType(email.getContentyType());
 
-		mailEntity.setFrom(getFrom(email.getFrom()));
+		mailEntity.setFrom(getAddressesAsString(email.getFrom()));
 		mailEntity.setAllHeaders(getHeaders(email.getAllHeaders()));
 
 		return mailEntity;
@@ -65,7 +66,7 @@ public class EmailConverter {
 		return stringBuilder.toString();
 	}
 
-	private String getFrom(Address[] addressesArray) {
+	private String getAddressesAsString(Address[] addressesArray) {
 		if (addressesArray == null || addressesArray.length == 0) {
 			logger.warn("from addresses are null or empty!!!");
 			return null;
