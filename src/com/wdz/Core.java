@@ -37,7 +37,7 @@ public class Core {
 
 		// ---------------------------------------------- SEND
 		logger.info("create email/s");
-		List<Email> mailsToSend = generator.generate("bankX@bankX.de", targetProperties.getProperty("email"), 2);
+		List<Email> mailsToSend = generator.generate("source@email.em", targetProperties.getProperty("email"), 2);
 
 		logger.info("send email/s");
 		for (Email email : mailsToSend) {
@@ -53,7 +53,7 @@ public class Core {
 		}
 
 		connector.insertEmail(emailsForDB);
-		
+
 		// ---------------------------------------------- RECIEVE
 		logger.info("wait");
 
