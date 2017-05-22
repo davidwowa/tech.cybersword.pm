@@ -1,3 +1,5 @@
+Phishing mail generator
+
 Example for email header manipulation and sending over other email service as example smtp2go.
 
 Features:
